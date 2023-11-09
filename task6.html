@@ -1,0 +1,37 @@
+<html>   
+   <head>   
+      <script type = "text/javascript">   
+      
+            var img = null;   
+            function init(){    
+               img = document.getElementById('myimg');  
+               img.style.position = 'relative';       
+               img.style.left = '50px';     
+            }       
+            function moveRight(){    
+               img.style.left = parseInt(  
+               img.style.left) + 100 + 'px';    
+            }  
+            function dontMove(){    
+               img.style.left = parseInt(  
+               img.style.left) + 0 + 'px';    
+            }     
+            window.onload = init;    
+     
+      </script>   
+   </head>   
+     
+   <body>   
+      <form>   
+         <img id = "myimg" src = "https://www.javatpoint.com/oprweb/train1.png" />   
+         <center>  
+            <p>Click the following buttons to handle animation</p>   
+         <input type = "button" value = "Start" onclick = "moveRight();" /> 
+         <input type = "button" value = "Stop" onclick = "dontMove();" /> 
+      </center>   
+      </form>  
+   </body>  
+     
+</html> 
+
+ 
